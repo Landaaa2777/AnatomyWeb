@@ -1,0 +1,73 @@
+/** Sistemas del cuerpo (tarjetas de la sección "Sistemas"). */
+export default [
+  {
+    id: 'oseo',
+    nombre: 'Sistema óseo',
+    dato: '206 huesos',
+    descripcion: 'Sostiene el cuerpo, protege los órganos, permite el movimiento junto a los músculos y almacena calcio. En la médula ósea se fabrican las células de la sangre.',
+    capas: ['esqueleto'],
+  },
+  {
+    id: 'muscular',
+    nombre: 'Sistema muscular',
+    dato: 'Más de 600 músculos',
+    descripcion: 'Genera movimiento, mantiene la postura y produce calor. Incluye músculo esquelético (voluntario), liso (órganos) y cardíaco.',
+    capas: ['musculos'],
+  },
+  {
+    id: 'circulatorio',
+    nombre: 'Sistema circulatorio',
+    dato: '≈ 100.000 km de vasos',
+    descripcion: 'El corazón impulsa la sangre por arterias, capilares y venas para repartir oxígeno y nutrientes y retirar desechos.',
+    capas: ['circulatorio'],
+  },
+  {
+    id: 'nervioso',
+    nombre: 'Sistema nervioso',
+    dato: '≈ 86.000 millones de neuronas',
+    descripcion: 'Recibe información, la procesa y da respuestas. Se divide en sistema nervioso central (encéfalo y médula) y periférico (nervios).',
+    capas: ['nervioso'],
+  },
+  {
+    id: 'respiratorio',
+    nombre: 'Sistema respiratorio',
+    dato: '≈ 20.000 respiraciones al día',
+    descripcion: 'Conduce el aire hasta los pulmones, donde el oxígeno pasa a la sangre y se elimina el dióxido de carbono.',
+    capas: ['organos'],
+  },
+  {
+    id: 'digestivo',
+    nombre: 'Sistema digestivo',
+    dato: '≈ 9 m de tubo digestivo',
+    descripcion: 'Transforma los alimentos en nutrientes que el cuerpo puede absorber y elimina los restos. Le ayudan el hígado y el páncreas.',
+    capas: ['organos'],
+  },
+  {
+    id: 'urinario',
+    nombre: 'Sistema urinario',
+    dato: '≈ 180 L filtrados al día',
+    descripcion: 'Los riñones filtran la sangre, regulan el agua y las sales y eliminan los desechos en forma de orina.',
+    capas: ['organos'],
+  },
+  {
+    id: 'endocrino',
+    nombre: 'Sistema endocrino',
+    dato: 'Más de 50 hormonas',
+    descripcion: 'Glándulas que liberan hormonas a la sangre para regular el metabolismo, el crecimiento, el estrés o la glucosa.',
+    capas: ['organos'],
+  },
+  {
+    id: 'linfatico',
+    nombre: 'Sistema linfático e inmunitario',
+    dato: 'Cientos de ganglios linfáticos',
+    descripcion: 'Defiende al organismo frente a infecciones y devuelve a la sangre el líquido de los tejidos. El bazo filtra la sangre.',
+    capas: ['organos'],
+  },
+  {
+    id: 'tegumentario',
+    nombre: 'Sistema tegumentario',
+    dato: '≈ 2 m² de piel',
+    descripcion: 'La piel, el pelo y las uñas forman una barrera protectora que regula la temperatura y percibe el entorno.',
+    capas: ['piel'],
+  },
+]
