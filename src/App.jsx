@@ -5,6 +5,8 @@ import { Hero } from './components/Hero.jsx'
 import { Explorer } from './components/Explorer.jsx'
 import { Systems } from './components/Systems.jsx'
 import { Study } from './components/Study.jsx'
+import { Exam } from './components/Exam.jsx'
+import { Features } from './components/Features.jsx'
 import { Glossary } from './components/Glossary.jsx'
 import { Footer } from './components/Footer.jsx'
 import { loadAnatomy } from './anatomy/loader.js'
@@ -21,9 +23,11 @@ export default function App() {
       <Navbar />
       <main id="contenido">
         <Hero />
+        <Features />
         <Explorer />
         <Systems />
         <Study />
+        <Exam />
         <Glossary />
       </main>
       <Footer />

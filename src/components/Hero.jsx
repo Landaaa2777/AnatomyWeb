@@ -1,4 +1,5 @@
-import { lazy, Suspense, useState } from 'react'
+import { lazy, Suspense, useMemo, useState } from 'react'
+import { buildQuestionBank } from '../lib/questionBank.js'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useI18n } from '../i18n/index.jsx'
 import { useExplorer, DEFAULT_VISIBLE } from '../state/explorer.js'
@@ -22,6 +23,7 @@ export function Hero() {
   const glowY = useTransform(scrollY, [0, 800], [0, 120])
   const gridY = useTransform(scrollY, [0, 800], [0, -60])
   const nStructures = Object.keys(content.structures).length
+  const nQuestions = useMemo(() => buildQuestionBank(content).length, [content])
   const nSystems = content.systems.length
 
   // clic en el hero: abre esa estructura en el explorador
@@ -81,12 +83,12 @@ export function Hero() {
           >
             {[
               [nStructures, t('hero.stats.structures'), 'text-sky-ink'],
-              [6, t('hero.stats.layers'), 'text-coral-ink'],
+              [nQuestions, t('hero.stats.questions'), 'text-coral-ink'],
               [nSystems, t('hero.stats.systems'), 'text-lavender-ink'],
             ].map(([n, label, color]) => (
               <div key={label} className="rounded-2xl glass px-4 py-3">
                 <dt className="sr-only">{label}</dt>
-                <dd className={`text-2xl font-semibold ${color}`}>{n}</dd>
+                <dd className={`text-2xl font-semibold tabular-nums ${color}`}>{n}</dd>
                 <dd className="text-xs text-ink-faint">{label}</dd>
               </div>
             ))}

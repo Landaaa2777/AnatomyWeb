@@ -9,9 +9,10 @@ import es from './es.js'
 import structuresEs from '../content/es/structures.js'
 import systemsEs from '../content/es/systems.js'
 import glossaryEs from '../content/es/glossary.js'
+import questionsEs from '../content/es/questions.js'
 
 export const LOCALES = {
-  es: { ui: es, content: { structures: structuresEs, systems: systemsEs, glossary: glossaryEs } },
+  es: { ui: es, content: { structures: structuresEs, systems: systemsEs, glossary: glossaryEs, questions: questionsEs } },
 }
 
 const I18nContext = createContext(null)

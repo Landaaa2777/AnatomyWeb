@@ -7,6 +7,7 @@ const LINKS = [
   ['explorar', 'nav.explore'],
   ['sistemas', 'nav.systems'],
   ['estudio', 'nav.study'],
+  ['tests', 'nav.tests'],
   ['glosario', 'nav.glossary'],
 ]
 

@@ -25,6 +25,13 @@ celeste y lavanda, y elementos de interfaz tipo HUD.
   - Tarjetas (flashcards) con giro 3D, mazos por sistema, "Lo sé / Repasar" y progreso.
   - **Quiz 3D** de 10 preguntas: *Señala en el modelo* (clic sobre la estructura) u *Opción múltiple*
     (identifica la estructura resaltada), con puntuación y mejor marca guardada en el navegador.
+- **Tests de anatomía**: banco de más de 500 preguntas de opción múltiple (124 redactadas con explicación y
+  el resto generadas a partir de las fichas: función, nombre latino, localización, patologías, sistema y datos
+  curiosos). Filtros por tema y dificultad, modo práctica (corrección inmediata) y modo examen (con tiempo,
+  navegador de preguntas y marcadas para revisar), nota sobre 10 con calificación, resultado por tema,
+  revisión de cada respuesta con enlace a la estructura en 3D, repetición de fallos e historial de intentos.
+  Se responde también con el teclado (1–4 / A–D y Enter). Las preguntas redactadas están en
+  `src/content/es/questions.js` y el generador en `src/lib/questionBank.js`.
 - **Glosario** de más de 60 términos anatómicos con buscador y filtros por categoría.
 
 ## Modelo 3D procedural (sin descargas)
